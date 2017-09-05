@@ -1,0 +1,37 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-theme.css" rel="stylesheet" />
+    <style>
+        .bta a {
+            color:white;
+            text-decoration:none;
+        }
+        body {
+            background-color:#F1F1F1
+        }
+    </style>
+</head>
+<body>
+    <div class="text-center"> 
+   
+        @*@ViewBag.Greeting (from  views)*@
+        <h2> Ми йдемо на вечірку.</h2>
+        <h3> Вас запрошено, потрібно лише заповнити форму</h3>
+       @*@Html.ActionLink("Форма RSVP","PsvpForm")*@
+        <br />
+        <div class="btn btn-success">
+            @Html.ActionLink("Форма RSVP", "RsvpForm")
+        </div>
+    </div>
+</body>
+</html>
